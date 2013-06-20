@@ -1,0 +1,15 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <div ng-app="app">
+      <div ng-controller="mainCtrl">
+        <form action="/uploads" ng-upload> 
+          <input type="file" name="avatar"></input>
+          <input type="submit" value="Upload" 
+           upload-submit="results(content, completed)"></input>
+        </form>
+      </div>  
+    </div>
+  </body>
+</html>
